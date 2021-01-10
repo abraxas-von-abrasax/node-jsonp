@@ -19,7 +19,7 @@ $ npm install node-jsonp
 
 The callback is called with `data` parameters.
 
-###Example
+### Example
 ```js
 const JSONP = require('node-jsonp-v2');
 
