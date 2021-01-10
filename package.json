@@ -1,11 +1,12 @@
 {
     "name": "node-jsonp-v2",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "description": "jsonp client for Node.js",
     "main": "index.js",
     "scripts": {
         "test": "mocha",
-        "coverage": "nyc npm run test"
+        "coverage": "nyc npm run test",
+        "prepublish": "npm run test"
     },
     "keywords": [
         "jsonp",
@@ -18,8 +19,7 @@
         "mocha": "~8.2.1",
         "nyc": "^15.1.0",
         "querystring": "~0.2.0",
-        "should": "~13.2.3",
-        "supertest": "~6.0.1"
+        "should": "~13.2.3"
     },
     "standard": {
         "global": [

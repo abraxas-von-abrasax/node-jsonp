@@ -19,20 +19,12 @@ $ npm install node-jsonp
 
 The callback is called with `data` parameters.
 
-###Examples
+###Example
 ```js
 const JSONP = require('node-jsonp-v2');
 
-JSONP('http://twitter.com/users/oscargodson.json', json => {
+JSONP('http://jsfiddle.net/echo/jsonp/?first=Hello%20&b=World', json => {
 	console.log(json);
-});
-
-JSONP('http://api.flickr.com/services/feeds/photos_public.gne',{ 'id': '12389944@N03', 'format': 'json' },'jsoncallback', json => {
-    console.log(json)
-});
-
-JSONP('http://graph.facebook.com/FacebookDevelopers', 'callback', function(json){
-    console.log(json);
 });
 ```
 
