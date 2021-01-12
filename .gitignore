@@ -4,3 +4,4 @@ out
 .vscode
 coverage
 .nyc_output
+.coveralls.yml
